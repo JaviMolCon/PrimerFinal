@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #222222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.427),
+      rgba(31, 31, 31, 0.967)
+    ),
+    url("./img/SPACEearth.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: #222222; */
+  /* padding: 1em;  */
+}
+
+header .menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+header li {
+  padding: 1em;
+}
+
+header .rightnavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 1em;
+}
+
+header .nav2 ul {
+  justify-content: flex-end;
+}
+
+header .navbar a {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+header .navbar a:hover {
+  color: rgb(63, 63, 226);
+}
+
+header .button {
+  background-color: #111e43;
+  color: black;
+}
+
+header .button:hover {
+  background-color: rgb(47, 47, 177);
+}
+header .button a:hover {
+  color: white;
+}
+
+header .backpicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header span {
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  text-shadow: 5px 3px 10px rgb(201, 201, 201);
+}
+
+header .headerbuttons {
+  padding-top: 12%;
+}
+
+.link-button {
+  width: 25em;
+  padding: 1.5em;
+  border-color: rgb(63, 63, 226);
+  background-color: #222222;
+  color: rgb(63, 63, 226);
+  font-weight: bold;
+}
+
+.link-button:hover {
+  color: white;
+  border-color: white;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+main {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+main .title {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+main .intro {
+  padding-left: 3em;
+}
+
+.section1title {
+  padding: 2em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  align-items: center;
+}
+
+.section1title span {
+  color: white;
+  font-size: larger;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+section #gallery {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.galleryItem {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex: 0 0 33.333333%; */
+  position: relative;
+  margin-top: 3rem;
+}
+
+.galleryItem img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.galleryItem span {
+  background-color: #302f2f;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  opacity: 0;
+}
+
+.galleryItem:hover img {
+  opacity: 0.3;
+}
+
+.galleryItem:hover .middle span {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.blog-entry {
+  color: white;
+  padding: 3rem;
+}
+.blogtitle {
+  padding-bottom: 1rem;
+  font-size: large;
+}
+.authordate {
+  font-size: smaller;
+  color: rgb(63, 63, 226);
+}
+
+.blog-aside {
+  display: flex;
+  flex-direction: row;
+}
+
+main .blogbody {
+  width: 80%;
+}
+
+main .asideborder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: groove;
+  border-color: rgb(63, 63, 226);
+  padding: 2rem;
+}
+
+main .asidetitle {
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 0.1rem;
+  background-color: rgb(63, 63, 226);
+}
+
+main .aside ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+main .aside ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main .aside ul li a:hover {
+  color: rgb(63, 63, 226);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 0rem;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 20%;
+}
+
+footer .formtit {
+  padding-bottom: 2rem;
+}
+
+#contactus input[type="submit"] {
+  background-color: rgb(63, 63, 226);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+footer .bottomline {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: x-small;
+}
+
+.footerelements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.footerelements form > * {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+footer .followtit {
+  padding-bottom: 2rem;
+}
+
+#followus ul {
+  list-style: none;
+}
+
+footer .ads ul {
+  list-style: none;
+  font-size: small;
+}
+
+footer .ads ul li a {
+  color: white;
+
+  text-decoration: none;
+}
+
+footer .ads ul li a:hover {
+  color: rgb(63, 63, 226);
+}
+
+footer .ads button {
+  margin-top: 3rem;
+}
